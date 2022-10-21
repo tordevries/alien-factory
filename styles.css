@@ -1,1 +1,175 @@
 /* styles for Alien Factory */
+
+* {
+	box-sizing: border-box;
+	font-family: Arial;
+}
+
+
+
+/* **************************************************** */
+/* code for palette and subpalette                      */
+/* **************************************************** */
+
+
+#palette {
+	background-color: #dddddd;
+	position: relative;
+	height: 90vh;
+	width: 20vw;
+	top: 5vh;
+	left: 5vh;
+}
+
+.features {
+	position: relative;
+	height: 10%;
+	width: 20vw;
+	border: 1px solid #555555;
+	transition: height 0.5s;
+}
+
+.features h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	background-color: #999999;
+}
+
+.options {
+	position: relative;
+	height: auto;
+	widthL: 20vw;
+}
+
+.option div {
+	position: relative;
+	height: 3vh;
+}
+
+#featuresBody {
+	height: 70%;
+}
+
+/* when the Face is showing */
+#palette.showFace #featuresFace {
+	height: 70%;
+}
+
+#palette.showFace #featuresBody,
+#palette.showFace #featuresArms,
+#palette.showFace #featuresFeet {
+	height: 10%;
+}
+
+#palette.showFace #featuresBody .options,
+#palette.showFace #featuresArms .options,
+#palette.showFace #featuresFeet .options {
+	display: none;
+}
+
+
+
+/* when the Body is showing */
+#palette.showBody #featuresBody {
+	height: 70%;
+}
+
+#palette.showBody #featuresFace,
+#palette.showBody #featuresArms,
+#palette.showBody #featuresFeet {
+	height: 10%;
+}
+
+#palette.showBody #featuresFace .options,
+#palette.showBody #featuresArms .options,
+#palette.showBody #featuresFeet .options {
+	display: none;
+}
+
+
+/* when the Arms is showing */
+#palette.showArms #featuresArms {
+	height: 70%;
+}
+
+#palette.showArms #featuresFace,
+#palette.showArms #featuresBody,
+#palette.showArms #featuresFeet {
+	height: 10%;
+}
+
+#palette.showArms #featuresFace .options,
+#palette.showArms #featuresBody .options,
+#palette.showArms #featuresFeet .options {
+	display: none;
+}
+
+
+/* when the Feet is showing */
+#palette.showFeet #featuresFeet {
+	height: 70%;
+}
+
+#palette.showFeet #featuresFace,
+#palette.showFeet #featuresBody,
+#palette.showFeet #featuresArms {
+	height: 10%;
+}
+
+#palette.showFeet #featuresFace .options,
+#palette.showFeet #featuresBody .options,
+#palette.showFeet #featuresArms .options {
+	display: none;
+}
+
+/* **************************************************** */
+/* code for avatar preview                              */
+/* **************************************************** */
+
+#preview {
+	position: absolute;
+	top: 5vh;
+	right: 10vh;
+	width: 90vh;
+	height: 90vh;
+}
+
+#preview div {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover;
+}
+
+#previewFace {
+	z-index: 1;
+}
+
+#previewFace.robot { 		background-image: url("images/face-robot.png"); 		}
+#previewFace.cyclops { 	background-image: url("images/face-cyclops.png");		}
+#previewFace.birdman { 	background-image: url("images/face-birdman.png"); 	}
+
+#previewBody.robot { 		background-image: url("images/body-robot.png"); 		}
+#previewBody.cyclops { 	background-image: url("images/body-cyclops.png");		}
+#previewBody.birdman { 	background-image: url("images/body-birdman.png"); 	}
+
+#previewArms.robot { 		background-image: url("images/arms-robot.png"); 		}
+#previewArms.cyclops { 	background-image: url("images/arms-cyclops.png");		}
+#previewArms.birdman { 	background-image: url("images/arms-birdman.png"); 	}
+
+#previewFeet.robot { 		background-image: url("images/feet-robot.png"); 		}
+#previewFeet.cyclops { 	background-image: url("images/feet-cyclops.png");		}
+#previewFeet.birdman { 	background-image: url("images/feet-birdman.png"); 	}
+
+
+
+
+
+
+
+
+
+
